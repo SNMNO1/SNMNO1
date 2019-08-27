@@ -15,13 +15,17 @@
 
 
 
+<meta name="description" content="博客">
+<meta name="keywords" content="IT,破解,分享,生活">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Xbai&#39;s Blog">
 <meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
 <meta property="og:site_name" content="Xbai&#39;s Blog">
+<meta property="og:description" content="博客">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Xbai&#39;s Blog">
+<meta name="twitter:description" content="博客">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -30,7 +34,7 @@
 
 
 
-    <link rel="shortcut icon" href="/favicon.jpg">
+    <link rel="shortcut icon" href="/favicon.jpeg">
 
 
 
@@ -101,6 +105,8 @@
           <h1 class="header-author"><a href="/">小白</a></h1>
         </hgroup>
 
+        
+        <p class="header-subtitle">混迹IT行业</p>
         
 
         
@@ -188,6 +194,8 @@
             <hgroup>
               <h1 class="header-author"><a href="/" title="回到主页">小白</a></h1>
             </hgroup>
+            
+            <p class="header-subtitle">混迹IT行业</p>
             
             <nav class="header-menu">
                 <ul>
@@ -364,22 +372,6 @@
     </div>
     
 <script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            var iPad = window.navigator.userAgent.indexOf('iPad');
-            if (iPad > -1 || $(".left-col").css("display") === "none") {
-                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
-                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
-                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
-            }
-            else {
-                var backgroundnum = 5;
-                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
-            }
-        })
-    </script>
 
 
 
