@@ -572,8 +572,8 @@ a {
   display: block;
   border: 5px solid #fff;
   border-radius: 50%;
-  width: 128px;
-  height: 128px;
+  width: 120px;
+  height: 120px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -584,7 +584,7 @@ a {
   text-align: center;
 }
 #header .profilepic img {
-  width: 105px;
+  width: 95px;
   -webkit-animation-duration: 0.4s;
   -moz-animation-duration: 0.4s;
   -ms-animation-duration: 0.4s;
