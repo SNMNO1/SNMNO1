@@ -597,9 +597,8 @@ a {
   -webkit-animation-delay: 0.3s;
 }
 #header .profilepic:hover {
-  border: 5px solid #88acdb;
-  -webkit-box-shadow: 0 0 1.5em #88acdb;
-  box-shadow: 0 0 1.5em #88acdb;
+  -webkit-box-shadow: 0 0 1.5em #4d5e74;
+  box-shadow: 0 0 1.5em #4d5e74;
   -webkit-animation: profilepic 0.15s linear infinite alternate;
   -moz-animation: profilepic 0.15s linear infinite alternate;
   -ms-animation: profilepic 0.15s linear infinite alternate;
