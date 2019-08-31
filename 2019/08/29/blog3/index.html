@@ -23,15 +23,10 @@
 <meta property="og:site_name" content="Xbai&#39;s Blog">
 <meta property="og:description" content="在地址栏输入127.0.0.1/DVWA-master/setup.php后，使用burpsuite无法对DVWA进行抓包解决方法。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2019/08/29/blog3/1.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/08/29/blog3/2.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/08/29/blog3/4.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/08/29/blog3/3.jpg">
-<meta property="og:updated_time" content="2019-08-31T09:10:00.056Z">
+<meta property="og:updated_time" content="2019-08-31T09:18:37.904Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="针对burpsuite无法对DVWA进行抓包的解决方案">
 <meta name="twitter:description" content="在地址栏输入127.0.0.1/DVWA-master/setup.php后，使用burpsuite无法对DVWA进行抓包解决方法。">
-<meta name="twitter:image" content="http://yoursite.com/2019/08/29/blog3/1.jpg">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -273,12 +268,20 @@
         <p>在地址栏输入127.0.0.1/DVWA-master/setup.php后，使用burpsuite无法对DVWA进行抓包解决方法。</p>
 <a id="more"></a>
 <p>首次遇到这个问题时，按照百度到的方法各种修改Internet选项，最后还是无法进行抓包，然后想到了个方法。<br>1、win+r后输入cmd，打开命令提示符，输入ipconfig后回车，查看电脑的ip地址，就是那个IPv4地址。</p>
-<p><img src="/2019/08/29/blog3/1.jpg" alt="cmd"></p>
-<p>2、将127.0.0.1/DVWA-master/setup.php中的127.0.0.1改成自己的ip地址，输入到地址栏中回车。<br>3、将代理设置改为127.0.0.1:8080。我这里使用的谷歌插件SwitchyOmega。<br><img src="/2019/08/29/blog3/2.jpg" alt="SwitchyOmega设置代理"><br>3、再次使用burpsuite进行抓包，就能抓到了。</p>
-<p><img src="/2019/08/29/blog3/4.jpg" alt="DVWA"></p>
-<p><img src="/2019/08/29/blog3/3.jpg" alt="抓包"></p>
-<p>从图片中可以看到，输入的用户名密码成功被抓到。</p>
-
+<div align="center">
+![cmd](blog3/1.jpg)
+</div>
+2、将127.0.0.1/DVWA-master/setup.php中的127.0.0.1改成自己的ip地址，输入到地址栏中回车。
+3、将代理设置改为127.0.0.1:8080。我这里使用的谷歌插件SwitchyOmega。
+<div align="center">
+![SwitchyOmega设置代理](blog3/2.jpg)
+</div>
+3、再次使用burpsuite进行抓包，就能抓到了。
+<div align="center">
+![DVWA](blog3/4.jpg)
+![抓包](blog3/3.jpg)
+</div>
+从图片中可以看到，输入的用户名密码成功被抓到。
       
     </div>
     
@@ -289,7 +292,7 @@
         <p><span>本文标题:</span><a href="/2019/08/29/blog3/">针对burpsuite无法对DVWA进行抓包的解决方案</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">小白</a></p>
         <p><span>发布时间:</span>2019-08-29, 21:50:29</p>
-        <p><span>最后更新:</span>2019-08-31, 17:10:00</p>
+        <p><span>最后更新:</span>2019-08-31, 17:18:37</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2019/08/29/blog3/" title="针对burpsuite无法对DVWA进行抓包的解决方案">http://yoursite.com/2019/08/29/blog3/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2019/08/29/blog3/　　作者: 小白" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
