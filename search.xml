@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>CKeditor5的简单基本部署方法</title>
+      <link href="/2019/09/03/blog5/"/>
+      <url>/2019/09/03/blog5/</url>
+      
+        <content type="html"><![CDATA[<p>个人比较喜欢CKeditor的风格，所以在众多编辑器中选择了它，但是文档是英文，还好有谷歌翻译。。。。。。</p><a id="more"></a>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 富文本编辑器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>eclipse创建的包与src目录同级解决方法</title>
       <link href="/2019/09/01/blog4/"/>
       <url>/2019/09/01/blog4/</url>
