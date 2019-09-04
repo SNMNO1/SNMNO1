@@ -23,10 +23,14 @@
 <meta property="og:site_name" content="Xbai&#39;s Blog">
 <meta property="og:description" content="个人比较喜欢CKeditor的风格，所以在众多编辑器中选择了它，但是文档是英文，还好有谷歌翻译。。。。。。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-04T06:28:35.636Z">
+<meta property="og:image" content="http://yoursite.com/2019/09/03/blog5/1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/03/blog5/blog5%5C2.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/03/blog5/3.jpg">
+<meta property="og:updated_time" content="2019-09-04T12:10:28.899Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CKeditor5的简单基本部署方法">
 <meta name="twitter:description" content="个人比较喜欢CKeditor的风格，所以在众多编辑器中选择了它，但是文档是英文，还好有谷歌翻译。。。。。。">
+<meta name="twitter:image" content="http://yoursite.com/2019/09/03/blog5/1.jpg">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -267,7 +271,23 @@
           
         <p>个人比较喜欢CKeditor的风格，所以在众多编辑器中选择了它，但是文档是英文，还好有谷歌翻译。。。。。。</p>
 <a id="more"></a>
-<pre><code>待更。。。。。。</code></pre>
+
+<h1 id="首先"><a href="#首先" class="headerlink" title="首先"></a>首先</h1><p>​    打开<a href="https://ckeditor.com/ckeditor-5/download/" title="点此进入下载" target="_blank" rel="noopener">CKeditor5下载</a>页面，我选择的版本是<em>CKEditor 5 Document</em>，大家注意，每个版本在后期配置不同，其他版本的配置方法在以后再写。</p>
+<img src="/2019/09/03/blog5/1.jpg" alt="下载" style="zoom: 33%;">
+
+
+
+<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h1><p>​    解压压缩包，因为解压后名字过长，不方便后续操作，所以尽量重命名一下，然后整个文件夹复制到项目中。</p>
+<p><img src="/2019/09/03/blog5/blog5%5C2.jpg" alt="项目"></p>
+<h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h1><p>​    1、在<code>&lt;head&gt;&lt;/head&gt;</code>中输入<code>&lt;script src=&quot;ckeditor/ckeditor.js&quot;&gt;&lt;/script&gt;</code>引用js文件。<strong>注意：</strong>路径要设置成你自己的。</p>
+<p>​    2、在你要放置编辑器的地方输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;toolbar-container&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;div id=&quot;editor&quot;&gt;</span><br><span class="line">        &lt;p&gt;这里写的显示在输入框中&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>​    3、再在后面输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">        DecoupledEditor</span><br><span class="line">           .create( document.querySelector( &apos;#editor&apos; ) )</span><br><span class="line">           .then( editor =&gt; &#123;</span><br><span class="line">               const toolbarContainer = document.querySelector( &apos;#toolbar-container&apos; );</span><br><span class="line">       </span><br><span class="line">               toolbarContainer.appendChild( editor.ui.view.toolbar.element );</span><br><span class="line">           &#125; )</span><br><span class="line">           .catch( error =&gt; &#123;</span><br><span class="line">               console.error( error );</span><br><span class="line">           &#125; );</span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h1><p>​    适当的进行美化，调整调整大小，就可以部署看结果喽哦。</p>
+<img src="/2019/09/03/blog5/3.jpg" alt="最终" style="zoom:50%;">
       
     </div>
     
@@ -278,7 +298,7 @@
         <p><span>本文标题:</span><a href="/2019/09/03/blog5/">CKeditor5的简单基本部署方法</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">小白</a></p>
         <p><span>发布时间:</span>2019-09-03, 14:34:35</p>
-        <p><span>最后更新:</span>2019-09-04, 14:28:35</p>
+        <p><span>最后更新:</span>2019-09-04, 20:10:28</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2019/09/03/blog5/" title="CKeditor5的简单基本部署方法">http://yoursite.com/2019/09/03/blog5/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2019/09/03/blog5/　　作者: 小白" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -308,7 +328,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#首先"><span class="toc-number">1.</span> <span class="toc-text">首先</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第二步"><span class="toc-number">2.</span> <span class="toc-text">第二步</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第三步"><span class="toc-number">3.</span> <span class="toc-text">第三步</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第四步"><span class="toc-number">4.</span> <span class="toc-text">第四步</span></a></li></ol>
         
     </div>
     <style>
